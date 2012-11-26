@@ -1,0 +1,122 @@
+.cropee-field {
+	margin:3px 0;
+}
+
+.cropee-field .wrap {
+	padding:5px;
+	border:1px solid #B6C0C2;
+	border-radius: 4px;
+	background-color:#fff;
+	position:relative;
+	overflow:hidden;
+	margin-bottom:10px;
+}
+
+.cropee-field .frame {
+	position:relative;
+	visibility:hidden;
+	overflow:hidden;
+	background-color:#fff;
+}
+
+.cropee-field div.image {
+	/*border:1px solid #8195A0;*/
+
+	overflow: hidden;
+	position: relative;
+	left:15px;
+	top:15px;
+}
+
+.cropee-field .frame:hover div.image {
+	overflow:visible;
+}
+.cropee-field img {
+	cursor:move;
+}
+.cropee-field .frame img {
+	position:absolute;
+	visibility:hidden;
+}
+
+.cropee-field .top,
+.cropee-field .left,
+.cropee-field .right,
+.cropee-field .bottom {
+	position:absolute;
+	background-color:rgba(255,255,255,0.6);
+}
+
+.cropee-field .left {
+	left:0;
+	top:15px;
+	bottom:15px;
+	width:15px;
+}
+.cropee-field .top {
+	left:0;
+	top:0;
+	right:0;
+	height:15px;
+}
+.cropee-field .right {
+	top:15px;
+	right:0;
+	bottom:15px;
+	width:15px;
+}
+.cropee-field .bottom {
+	left:0;
+	bottom:0;
+	right:0;
+	height:15px;
+}
+
+.cropee-field .zoom {
+	position:absolute;
+	top:30px;
+	height:24px;
+	right:60px;
+	width:24px;
+	background:#ECF1F4;
+	border:1px solid #B6C0C2;
+	background-repeat:no-repeat;
+	background-position:3px 3px;	
+	border-radius:4px;
+	cursor:pointer;
+	display:none;
+}
+.cropee-field .frame:hover .zoom {
+	display:block;
+}
+.cropee-field .plus {
+	background-image:url(../images/zoom_in.gif);
+}
+.cropee-field .minus {
+	right:30px;
+	background-image:url(../images/zoom_out.gif);
+}
+
+.cropee-field button {
+    display:none;
+    margin: 3px 4px 0 0;
+    padding:0 6px;
+	border: 1px solid #9A9A9A;
+
+    color: #333333 !important;
+	font-size: 12px;
+	line-height: 20px;
+	cursor: pointer;
+    white-space: nowrap;
+	background: -moz-linear-gradient(center top , rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)) repeat scroll 0 0 transparent;
+    box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.5) inset;
+	text-shadow: 0 1px #FFFFFF;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.cropee-field button:hover {
+	color:#E11842;
+    background: -moz-linear-gradient(center top , #FFFFFF, rgba(255, 255, 255, 0.5)) repeat scroll 0 0 transparent;
+    box-shadow: 0 0 1px 1px #FFFFFF inset;
+}
+  
